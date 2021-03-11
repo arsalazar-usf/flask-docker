@@ -44,6 +44,8 @@ Fork this repo to your GitHub account
 - Now you can see that the container still exists but is stopped: `docker ps -a`
 - To remove a container, you can run docker rm <name or id of stopped container>
 - If you want to stop and remove a container that's still running, you can run `docker rm -f <name or id of container>`
+- Start the container back up with the development environment variable to allow Flask to update it: `docker run -d -p 5000:5000 -v $(pwd):/app -e FLASK_ENV=development cs486-flask`
+- Check that localhost:5000 show the current Hello World message
 - Change the message returned by `hello()` in app.py
 - Go to browser and navigate to localhost:5000
 - Verify that your new message is shown
