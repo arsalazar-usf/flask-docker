@@ -25,7 +25,12 @@
       "command": null,
       "linuxParameters": null,
       "cpu": 256,
-      "environment": [],
+      "environment": [
+        {
+          "name": "ENV",
+          "value": "dev"
+        }
+      ],
       "resourceRequirements": null,
       "ulimits": [],
       "dnsServers": null,
