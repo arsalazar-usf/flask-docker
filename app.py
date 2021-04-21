@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
   ENV = os.getenv('ENV')
-  return 'Hello ECS!'
+  return f'Hello {ENV}!'
 
 
 if __name__ == '__main__':
