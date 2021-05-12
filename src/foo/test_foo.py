@@ -1,4 +1,4 @@
 import foo
 
 def test_bar():
-    assert foo.bar() == "Hello"
+    assert foo.bar() == "Hello fail"
