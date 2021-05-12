@@ -85,7 +85,7 @@ jobs:
     - name: Deploy Amazon ECS task definition prod
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: ${{ steps.task-def.outputs.task-definition }}
+        task-definition: ${{ steps.task-def-prod.outputs.task-definition }}
         service: usfca-cs-486-prod-demo
         cluster: usfca-cs-486-prod-demo
         wait-for-service-stability: true
