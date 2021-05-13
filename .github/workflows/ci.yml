@@ -80,7 +80,7 @@ jobs:
       with:
         task-definition: task-definition-prod.json
         container-name: usfca-cs-486-prod-demo
-        image: ${{ steps.build-image.outputs.image }}
+        image: ${{ steps.build-image-prod.outputs.image }}
 
     - name: Deploy Amazon ECS task definition prod
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
