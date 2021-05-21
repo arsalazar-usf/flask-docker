@@ -18,7 +18,7 @@ env:
   ECS_SERVICE: dev-empociask
   ECS_TASK_DEFINITION: dev-empociask-task.json
   CONTAINER_NAME: dev-empociask
-  IMAGE: 0
+  IMAGE: 0 
 
 
 jobs:
